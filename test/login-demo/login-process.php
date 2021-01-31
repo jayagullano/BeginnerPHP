@@ -1,6 +1,16 @@
 
     <?php
 
+    /*
+
+        Author: Jay Agullano
+        Since: January 30, 2020
+        Version: 1.0
+     
+        This program is used to process the submission of the login form.
+       
+       */
+
     include './db.php';
     include './functions.php';
 

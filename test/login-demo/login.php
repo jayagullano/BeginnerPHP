@@ -1,3 +1,13 @@
+<!-- 
+
+        Author: Jay Agullano
+        Since: January 29, 2020
+        Version: 1.0
+     
+        This file is used to display a login form.
+       
+    -->
+    
 <!DOCTYPE html>
 <html lang="en">
 <head>

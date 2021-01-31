@@ -22,12 +22,29 @@
 
 		Step 5: Instantiate the class / create object and call it pitbull
 
-Step 6: Call the method ShowAll
+        Step 6: Call the method ShowAll
 
-	
-
-		
 	*/
+    
+        class Dog{
+    
+            var $name;
+            var $breed;
+            var $age;
+
+            function showAll(){
+                echo $this->name . "<br>" . $this->breed . "<br>" . $this->age;
+            }
+
+        };
+
+        $myDog = new Dog();
+
+        $myDog->name = "John";
+        $myDog->breed = "Pitbull";
+        $myDog->age = 3;
+
+        $myDog->showAll();
 	
 	?>
 

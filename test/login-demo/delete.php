@@ -8,7 +8,7 @@
         This program is used to update records from the loginapp database 
         corresponding to a selected id.
        
-    -->
+-->
 
 
 <?php
@@ -24,7 +24,7 @@
 <?php
     
     if(isset($_POST['submit'])){
-        UpdateTable();
+        DeleteRow();
     }
 
 ?>
@@ -44,21 +44,9 @@
        
        <div class="col-xm-6"> <!-- This moves the container to the right -->
                        
-           <form action="update.php" method="post">
+           <form action="delete.php" method="post">
              
-             <h1>Update Page</h1>
-              
-               <div class="form-group">
-                   
-                   <br><label for="username">User Name: </label>
-                   <input type="name" name="username" placeholder="Enter User Name" class="form-control">
-               </div>
-               
-               <div class="form-group">
-                   
-                   <br><label for="password">Password: </label>
-                   <input type="password" name="password" placeholder="Enter Password" class = "form-control">
-               </div>
+             <h1>Delete User</h1>
                
                <div class="form-group">
                   
@@ -67,7 +55,8 @@
                       <?php
                         while($row = mysqli_fetch_assoc($selectResult)){
                             $id = $row['id'];
-                            echo "<option value='$id'>$id</option>";
+                            $username = $row['username'];
+                            echo "<option value='$id'>$username</option>";
                         }
                         ?>
                       
@@ -76,7 +65,7 @@
                </div>
                
                <div class="form-group">
-                   <br><input type="submit" name="submit" value="Update User" class="form-control">
+                   <br><input type="submit" name="submit" value="Delete" class="form-control" placeholder="Delete">
                </div>
                
            </form>

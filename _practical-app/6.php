@@ -16,13 +16,15 @@
 
 	<?php  
 
-/*  Step1: Make a form that submits one value to POST super global
-
-
- */
-
-	
-?>
+    /*  Step1: Make a form that submits one value to POST super global */
+    
+    if(isset($_POST['btn'])){
+        echo "<h1>You pressed the button.</h1>";
+    }
+    
+    ?>
+    
+    <form action="6.php" method="post"><input type="submit" name="btn"></form>
 
 
 </article><!--MAIN CONTENT-->

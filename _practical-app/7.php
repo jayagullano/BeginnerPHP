@@ -27,6 +27,23 @@
 		Step 4 - Connect to Database and read data
 
 */
+            
+        $connection = mysqli_connect('localhost', 'root', 'root', 'numbers', '3307');
+        
+        if(!$connection){
+            die("<br>Connection Failed.<br>");
+        }
+        
+        $result = mysqli_query($connection, "SELECT * from ints");
+        
+        if(!$result){
+            die("<br>Query failed.<br>");
+        }
+        
+        while($row = mysqli_fetch_assoc($result)){
+            print_r($row);
+            echo "<br>";
+        }
 	
 	?>
 

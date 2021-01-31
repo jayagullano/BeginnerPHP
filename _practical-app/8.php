@@ -26,6 +26,12 @@
 		Step 4 - echo the variable
 
 	*/
+        
+        $name = "Rolando";
+        
+        $name = crypt($name, "$6$saltbae$"); //Sha512
+        
+        echo "SHA512: " . $name;
 	
 	?>
 

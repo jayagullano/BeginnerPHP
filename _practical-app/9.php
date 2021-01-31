@@ -28,8 +28,27 @@
 	*/
 	
 	?>
+    
+    <!-- Step 1 -->
 
-
+    <a href="9.php?id=100">Click HERE</a>
+    <h1><?php print_r($_GET)?></h1>
+    
+    <!-- Step 2 -->
+    
+    <?php setCookie('CookieMonster', 'Hey', time() + (60*60*24*7)) ?>
+    
+    <!-- Step 3 -->
+    
+    <?php session_start(); 
+    
+        $_SESSION['Hey'] = 10;
+        
+        if(isset($_SESSION['Hey'])){
+            echo $_SESSION['Hey'];    
+        }
+        
+    ?>
 
 
 

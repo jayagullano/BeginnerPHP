@@ -1,3 +1,13 @@
+<!-- 
+
+        Author: Jay Agullano
+        Since: January 29, 2020
+        Version: 1.0
+     
+        This program is used to display a register screen.
+       
+    -->
+    
 <!DOCTYPE html>
 <html lang="en">
 <head>
